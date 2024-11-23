@@ -1,0 +1,536 @@
+* {
+    margin: 0;
+    padding: 0.3rem;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background-color: #f8f8f8;
+}
+
+/* Banner Section */
+.banner {
+    background-image: url('./assets/aboutpbg.jpg'); /* Replace with your banner image */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.banner h1 {
+    font-size: 48px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.banner p {
+    font-size: 18px;
+    width: 70%;
+    margin: 0 auto;
+}
+
+/* About Us Section */
+.about-us {
+    padding: 50px 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.about-us .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.section-title h2 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.about-text p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Mission & Vision Section */
+.mission, .vision {
+    padding: 50px 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.mission .container, .vision .container {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.mission p, .vision p {
+    font-size: 16px;
+    color: #666;
+    line-height: 1.7;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Adding some spacing between sections */
+section {
+    margin-bottom: 50px;
+}
+.footer {
+    background-color: #2C2C2C;
+    color: #FCFDFF;
+    padding: 40px;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0.2rem;
+    gap: 2px;
+}
+
+.footer-section {
+    flex: 1;
+    min-width: 250px;
+    margin: 10px;
+}
+
+.subscribe-btn {
+    padding: 10px 15px;
+    font-size: 14px;
+    background-color: #FF8126;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.subscribe-btn:hover {
+    background-color: #FFB904;
+}
+
+input[type="email"] {
+    padding: 10px;
+    margin-bottom: 5px;
+    width: 100%;
+    max-width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.footer-heading {
+    font-size: 20px;
+    color: #FFB904;
+    margin-bottom: 15px;
+}
+
+.footer-section p, 
+.footer-section ul, 
+.footer-section li {
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #FF8126;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #FFB904;
+}
+
+.footer-bottom {
+    text-align: center;
+    border-top: 1px solid #505050;
+    padding-top: 20px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.availability {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.availability.available {
+    color: green; /* Green for available */
+    background-color: #e8f5e8; /* Light green background */
+    padding: 5px 10px; /* Add padding for a button-like look */
+    border-radius: 5px; /* Rounded corners */
+    display: inline-block; /* Makes the div behave like inline content */
+    font-size: 1.1rem; /* Slightly larger text */
+}
+
+.availability.unavailable {
+    color: red; /* Red for unavailable */
+    background-color: #fbe8e8; /* Light red background */
+    padding: 5px 10px;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+/* Tour Guide Section Styles */
+.tour-guide {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #FCFDFF; 
+    border-radius: 8px;
+    display: flex;
+  
+  
+   
+}
+
+.tour-guide .section-wrapper { 
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+.tour-guide h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.tour-guide .subtitle {
+    color: #666;
+    margin-bottom: 30px;
+    font-size: 1em;
+}
+
+/* Testimonial Container */
+.testimonial-container {
+    display: flex;
+    gap: 80px;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+/* Testimonial Card */
+.testimonial-card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+    width: 250px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.testimonial-card:hover {
+    transform: translateY(-10px);
+}
+
+.card-image {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.card-image img {
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border: 4px solid #ffcc00; 
+}
+
+.testimonial-card h3 {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.testimonial-card .designation {
+    color: #999;
+    font-size: 0.9em;
+    margin-bottom: 15px;
+}
+
+.testimonial-card .review {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.testimonial-card .rating {
+    font-size: 1em;
+    color: #ffcc00;
+}
+
+.testimonial-card .rating::before {
+    content: "Reviews: ";
+    color: #666;
+}
+
+/* Availability */
+.testimonial-card .availability {
+    font-size: 0.9em;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+/* Booking Button */
+.testimonial-card .booking-button {
+    display: inline-block;
+    background-color: #ff8c00;
+    color: #fff;
+    font-size: 1em;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease;
+}
+
+.testimonial-card .booking-button:hover {
+    background-color: #ffcc00;
+}
+
+/* Decorative Triangle */
+.testimonial-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 30px;
+    background-color: #ffcc00;
+    border-radius: 0 10px 0 10px;
+}
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.logo-text {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+/* Short bar for Tour Guide Register */
+.register-short-bar {
+    margin: 20px auto;
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(8px);
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+}
+
+.slogan {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #555;
+}
+
+.tour-guide-register {
+    text-decoration: none;
+    padding: 10px 20px;
+    background-color: #ff8c00;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.tour-guide-register:hover {
+    background-color: #FFB904;
+    transform: scale(1.05);
+}
+
+
+.top-destination {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.top-destination h2 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.top-destination .subtitle {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+
+.destination-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+
+.card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.card-content {
+    padding: 20px;
+    text-align: left;
+}
+
+.card-content .location {
+    font-size: 0.9em;
+    color: #FFB904;
+    font-weight: bold;
+}
+
+.card-content h3 {
+    font-size: 1.5em;
+    color: #333;
+    margin: 10px 0;
+}
+
+.card-content .details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.9em;
+    color: #555;
+    margin-top: 15px;
+}
+
+.card-content .details span {
+    display: flex;
+    align-items: center;
+}
+
+
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+    background: #505050;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1px);
+    border-radius: .7rem;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 15px 30px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    transition: color 0.3s;
+    gap: 25px;
+   
+}
+
+.nav-links a:hover {
+    color: #FFB904;
+}
+
+
+.nav-buttons {
+    display: flex;
+    gap: 15px;
+}
+
+.sign-up {
+    text-decoration:none;
+    padding: 8px 16px;
+    color: white;
+    font-weight: 500;
+}
+
+.sign-up:hover {
+    color: #FFB904;
+}
+
+.login {
+    text-decoration: none;
+    color: #ffffff;
+    background-color: #ff7f50;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.login:hover {
+    background-color: #FFB904;
+}
